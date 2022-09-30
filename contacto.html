@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de mangas</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&family=Bangers&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="recursos/css/normalize.css">
+    <link rel="stylesheet" href="recursos/css/style.css" />
+</head>
+
+<body>
+    <!--Inicio Header-->
+    <header class="site-header">
+        <div class="contenedor">
+            <div class="contenido-header">
+                <div class="barra">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="recursos/img/newLogo.png" alt="Imagen logo">
+                        </a>
+                    </div>
+
+                    <nav class="navegacion">
+                        <a href="index.html">Inicio</a>
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="#">Anuncios</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Fin Header-->
+
+    <!--Inicio Main-->
+    <h1 class="centrar-texto fw-400">Contacto</h1>
+    <main class="formulario seccion">
+        <form>
+            <fieldset>
+                <legend>Informacion personal</legend>
+
+                <label for="txt_nombre">Nombre:</label>
+                <input type="text" id="txt_nombre" placeholder="Escriba su nombre aqui...">
+
+                <label for="txt_correo">Correo:</label>
+                <input type="email" id="txt_correo" placeholder="Ejemplo@mail.cl" required>
+
+                <label for="slc_ciudad">Ciudad:</label>
+                <select id="slc_ciudad">
+                    <option disabled selected>--Seleccione--</option>
+                    <option>Arica</option>
+                    <option>Santiago</option>
+                </select>
+
+                <label for="txt_telefono">Telefono:</label>
+                <input type="tel" id="txt_telefono" placeholder="987654321">
+
+                <label for="txa_mensaje">Mensaje:</label>
+                <textarea id="txa_mensaje"></textarea>
+            </fieldset>
+            <div class="ver-todos">
+                <input class="btn btn-verde" type="submit">
+            </div>
+        </form>
+    </main>
+
+    <!--Fin Main-->
+
+    <!--Inicio Footer-->
+    <footer class="seccion site-footer">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Anuncios</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <ul class="iconos-contacto">
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="recursos/img/fb.svg" alt="Imagen contacto">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="recursos/img/instagram.svg" alt="Imagen contacto">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://whatsapp.com" target="_blank">
+                        <img src="recursos/img/whatsapp.svg" alt="Imagen contacto">
+                    </a>
+                </li>
+            </ul>
+
+            <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+        </div>
+    </footer>
+    <!--Fin Footer-->
+</body>
+
+</html>

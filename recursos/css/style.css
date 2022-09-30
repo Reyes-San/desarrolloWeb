@@ -1,0 +1,376 @@
+html{
+    /**Reset para rems**/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.6rem;
+}
+
+/**Globales**/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.formulario{
+    max-width: 90rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+h1{
+    font-size: 5.8rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+img{
+    /**Le doy un tamaño maximo de 100% del contenedor a la imagen**/
+    max-width: 100%;
+}
+
+.d-block{
+    display: block!important;
+}
+
+/**Utilidades**/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/**Header**/
+.site-header{
+    background-color: #333333;
+    /**Espacio interior**/
+    padding: 2rem 0 3rem 0;
+}
+
+.site-header.inicio{
+    background-color: #333333;
+    background-image: url(../img/portadaF.png);
+    background-position: center center;
+    /**vh para tomar todo el largo de la pantalla**/
+    height: 100vh;
+    background-size: cover;
+    min-height: 60rem;
+}
+
+.contenido-header{
+    height: 100%;
+    /**posiciona elementos de acuerdo a propiedades de flexbox**/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    flex-basis: 20%;
+}
+
+.contenido-header h1{
+    color: white;
+}
+
+/**Navegador**/
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+}
+
+.navegacion a:hover{
+    color: gray;
+}
+
+.navegacion a:last-of-type{
+    margin-right: 0;
+}
+
+/**Nosotros**/
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconos{
+    flex-basis: calc(33.3% - 2rem);
+    text-align: center;
+}
+
+/**Main**/
+
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.anuncios{
+    flex: 0 0 calc(33.3% - 2rem);
+    border: 0.1rem solid black;
+    background-color: #ffe5df;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.contenido-anuncio{
+    padding: 2rem;
+}
+
+.iconos-caracteristicas{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.iconos-caracteristicas li{
+    flex-basis: calc(15% - 1rem);
+}
+
+.precio{
+    color: tomato;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.ver-todos{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/**Botones**/
+.btn{
+    color:#ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+
+.btn-naranja{
+    background-color: coral;
+}
+
+.btn-verde{
+    background-color: forestgreen;
+}
+
+/**Nuevos**/
+.img-nuevos{
+    background-image: url(../img/Portada\ Nuevos.png);
+    background-color:#333333;
+    background-position: center center;
+    background-size: cover;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-nuevos{
+    color: #ffffff;
+    flex:1;
+}
+
+/**seccion inferior**/
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .populares{
+    flex-basis: 60%;
+}
+
+.seccion-inferior .comentarios{
+    flex-basis: calc(40% - 2rem);
+}
+
+.entradas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: #ffe5df;
+}
+
+.entrada-img{
+    flex-basis: 50%;
+}
+
+.entrada-texto{
+    flex-basis: calc(50% - 3rem);
+}
+
+.entrada-texto h3{
+    margin: 0;
+    line-height: 1.4;
+}
+
+/**Comentarios**/
+
+.entrada-comentarios{
+    background-color: #71b100;
+    font-size: 2.5rem;
+    padding: 2rem; 
+    color: white;
+    border-radius: 2rem;
+}
+
+.entrada-comentarios p{
+    text-align: right;
+}
+
+.comentarios blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+
+}
+
+.comentarios blockquote{
+    position: relative;
+    padding-left: 5rem;
+}
+
+/**Footer**/
+.site-footer{
+    background-color: #333333;
+    margin: 3rem 0 0 0;
+}
+
+.site-footer nav a{
+    font-size: 1.5rem;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.iconos-contacto{
+    flex-basis: 30%;
+    display: flex;
+    list-style: none;
+}
+
+.iconos-contacto li{
+    flex-basis: 10%;
+    margin-right: 2rem;
+}
+
+.copyright{
+    color:white;
+}
+
+/**Nosotros**/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/**Mangas**/
+.mangas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.manga-imagen{
+    flex-basis: 60%;
+}
+
+.manga-contenido{
+    flex-basis: calc(40% - 2rem);
+    padding-top: 8rem;
+    
+}
+
+.manga-contenido p, .manga-contenido blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/**Contacto**/
+legend{
+    font-size: 2.2rem;
+    color: #4f4f4f;
+}
+
+label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input:not([type="submit"]),
+select,
+textarea{
+    padding: .5rem;
+    display: block;
+    background-color: #e1e1e1;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+select{
+    appearance: none;
+}
+
+textarea{
+    height: 20rem;
+}
+
